@@ -13,6 +13,9 @@ import util.{Try, Success, Failure}
  *   -- Better testing, decomposition of update functions
  *   -- Better traceability of updates (e.g. using command objects)
  *
+ * - Using the Try monad to propagate exceptions (due to validation etc.) 
+ *   to the state transitions.
+ *
  * - Instead of BigDecimal, I use PDecimal which only allows positive numbers.
  *   -- It validates against negative numbers as early as possible in a type-safe way.
  *
